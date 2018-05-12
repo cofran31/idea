@@ -1,0 +1,667 @@
+{
+	"id": "b2751254-9cd0-4680-aba3-05f3c45810a8",
+	"name": "Proyecto Idea",
+	"description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests an user can send?",
+	"auth": null,
+	"events": null,
+	"variables": null,
+	"order": [],
+	"folders_order": [
+		"636f9913-95ae-4c18-94fe-205bb232abde",
+		"898be321-f1ec-445e-ae9e-91ae9241b638"
+	],
+	"folders": [
+		{
+			"id": "898be321-f1ec-445e-ae9e-91ae9241b638",
+			"name": "Api Ideas",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "b2751254-9cd0-4680-aba3-05f3c45810a8",
+			"folder": null,
+			"order": [
+				"c6cdf1cf-f198-4369-8fbe-81ff806fc31e",
+				"2c163e4a-6a94-4b6e-848a-72c70ed566ab",
+				"f95da31c-6353-4269-9ee6-1303ad2332b9",
+				"aff32b84-f3f2-4813-a181-26da14e66965"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "636f9913-95ae-4c18-94fe-205bb232abde",
+			"name": "Api Users",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "b2751254-9cd0-4680-aba3-05f3c45810a8",
+			"folder": null,
+			"order": [
+				"d4241e36-6705-4576-8ee4-0a0c6d2a2a94",
+				"60e76513-ec3b-43f2-b6ab-0607e0e4901f",
+				"22ef14c4-c18b-4638-a64d-e0bdfa1e286b",
+				"e3342e70-fe64-4db7-ab25-a676d377fb33",
+				"76e3d374-9a08-41e4-8b81-422244bde48c"
+			],
+			"folders_order": []
+		}
+	],
+	"requests": [
+		{
+			"id": "22ef14c4-c18b-4638-a64d-e0bdfa1e286b",
+			"name": "Todos los usuarios",
+			"url": "http://200.107.241.6:1985/api/v1/user/todos",
+			"description": "Crear un nuevo usuario",
+			"data": [
+				{
+					"key": "email",
+					"value": "pedrof@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "987654321",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				},
+				{
+					"key": "token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImZpcnN0X25hbWUiOiJQZWRybyIsImxhc3RfbmFtZSI6IkZlcm5hbmRleiIsImVtYWlsIjoicGVkcm9mQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiOTg3NjU0MzIxIiwiY3JlYXRlZCI6IjIwMTgtMDUtMTJUMDM6MDE6NTIuMDAwWiIsInRpcG9fdXNlcnMiOiJ1IiwiaWF0IjoxNTI2MDk0NDMzLCJleHAiOjE1MjYxODA4MzN9.DbvbvjbRH14j4H22wqin4WH-oVYPTGStRW70iy45VO0",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "636f9913-95ae-4c18-94fe-205bb232abde",
+			"responses": [
+				{
+					"id": "0580be48-6844-4f57-9927-d0d90b7e7817",
+					"name": "Default",
+					"status": "201 Created",
+					"mime": null,
+					"language": null,
+					"text": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created"
+					},
+					"requestObject": {
+						"url": "http://200.107.241.6:1985/api/v1/user/nuevo",
+						"method": "POST",
+						"data": "",
+						"dataMode": "raw"
+					},
+					"headers": null,
+					"cookies": null,
+					"request": "22ef14c4-c18b-4638-a64d-e0bdfa1e286b",
+					"collection": "b2751254-9cd0-4680-aba3-05f3c45810a8"
+				}
+			],
+			"headers": "Content-Type: application/x-www-form-urlencoded\ntoken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImZpcnN0X25hbWUiOiJQZWRybyIsImxhc3RfbmFtZSI6IkZlcm5hbmRleiIsImVtYWlsIjoicGVkcm9mQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiOTg3NjU0MzIxIiwiY3JlYXRlZCI6IjIwMTgtMDUtMTJUMDM6MDE6NTIuMDAwWiIsInRpcG9fdXNlcnMiOiJ1IiwiaWF0IjoxNTI2MDk0NDMzLCJleHAiOjE1MjYxODA4MzN9.DbvbvjbRH14j4H22wqin4WH-oVYPTGStRW70iy45VO0\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "2c163e4a-6a94-4b6e-848a-72c70ed566ab",
+			"name": "Todas las ideas",
+			"url": "http://200.107.241.6:1985/api/v1/idea/todos",
+			"description": "Crear un nuevo usuario",
+			"data": [
+				{
+					"key": "email",
+					"value": "pedrof@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "987654321",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				},
+				{
+					"key": "token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImZpcnN0X25hbWUiOiJQZWRybyIsImxhc3RfbmFtZSI6IkZlcm5hbmRleiIsImVtYWlsIjoicGVkcm9mQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiOTg3NjU0MzIxIiwiY3JlYXRlZCI6IjIwMTgtMDUtMTJUMDM6MDE6NTIuMDAwWiIsInRpcG9fdXNlcnMiOiJ1IiwiaWF0IjoxNTI2MDk0NDMzLCJleHAiOjE1MjYxODA4MzN9.DbvbvjbRH14j4H22wqin4WH-oVYPTGStRW70iy45VO0",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "898be321-f1ec-445e-ae9e-91ae9241b638",
+			"responses": [
+				{
+					"id": "99ff26df-8b9b-491a-983a-f62867943088",
+					"name": "Default",
+					"status": "201 Created",
+					"mime": null,
+					"language": null,
+					"text": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created"
+					},
+					"requestObject": {
+						"url": "http://200.107.241.6:1985/api/v1/user/nuevo",
+						"method": "POST",
+						"data": "",
+						"dataMode": "raw"
+					},
+					"headers": null,
+					"cookies": null,
+					"request": "2c163e4a-6a94-4b6e-848a-72c70ed566ab",
+					"collection": "b2751254-9cd0-4680-aba3-05f3c45810a8"
+				}
+			],
+			"headers": "Content-Type: application/x-www-form-urlencoded\ntoken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImZpcnN0X25hbWUiOiJQZWRybyIsImxhc3RfbmFtZSI6IkZlcm5hbmRleiIsImVtYWlsIjoicGVkcm9mQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiOTg3NjU0MzIxIiwiY3JlYXRlZCI6IjIwMTgtMDUtMTJUMDM6MDE6NTIuMDAwWiIsInRpcG9fdXNlcnMiOiJ1IiwiaWF0IjoxNTI2MDk0NDMzLCJleHAiOjE1MjYxODA4MzN9.DbvbvjbRH14j4H22wqin4WH-oVYPTGStRW70iy45VO0\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "60e76513-ec3b-43f2-b6ab-0607e0e4901f",
+			"name": "Login usuario",
+			"url": "http://200.107.241.6:1985/api/v1/sec/login",
+			"description": "Crear un nuevo usuario",
+			"data": [
+				{
+					"key": "email",
+					"value": "pedrof@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "987654321",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "636f9913-95ae-4c18-94fe-205bb232abde",
+			"responses": [
+				{
+					"id": "c61bc28f-bafc-454a-832f-3284bff52eac",
+					"name": "Default",
+					"status": "201 Created",
+					"mime": null,
+					"language": null,
+					"text": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created"
+					},
+					"requestObject": {
+						"url": "http://200.107.241.6:1985/api/v1/user/nuevo",
+						"method": "POST",
+						"data": "",
+						"dataMode": "raw"
+					},
+					"headers": null,
+					"cookies": null,
+					"request": "60e76513-ec3b-43f2-b6ab-0607e0e4901f",
+					"collection": "b2751254-9cd0-4680-aba3-05f3c45810a8"
+				}
+			],
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "76e3d374-9a08-41e4-8b81-422244bde48c",
+			"name": "Actualizar un usuario",
+			"url": "http://200.107.241.6:1985/api/v1/user/actualizar/4",
+			"description": "Crear un nuevo usuario",
+			"data": [
+				{
+					"key": "first_name",
+					"value": "Irving",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "last_name",
+					"value": "Corenel",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "i.corenel@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "564123",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tipo_users",
+					"value": "u",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				},
+				{
+					"key": "token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImZpcnN0X25hbWUiOiJQZWRybyIsImxhc3RfbmFtZSI6IkZlcm5hbmRleiIsImVtYWlsIjoicGVkcm9mQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiOTg3NjU0MzIxIiwiY3JlYXRlZCI6IjIwMTgtMDUtMTJUMDM6MDE6NTIuMDAwWiIsInRpcG9fdXNlcnMiOiJ1IiwiaWF0IjoxNTI2MDk0NDMzLCJleHAiOjE1MjYxODA4MzN9.DbvbvjbRH14j4H22wqin4WH-oVYPTGStRW70iy45VO0",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "636f9913-95ae-4c18-94fe-205bb232abde",
+			"responses": [
+				{
+					"id": "82ca28d2-a61a-47ce-9313-e2e175dd4f23",
+					"name": "Default",
+					"status": "201 Created",
+					"mime": null,
+					"language": null,
+					"text": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created"
+					},
+					"requestObject": {
+						"url": "http://200.107.241.6:1985/api/v1/user/nuevo",
+						"method": "POST",
+						"data": "",
+						"dataMode": "raw"
+					},
+					"headers": null,
+					"cookies": null,
+					"request": "76e3d374-9a08-41e4-8b81-422244bde48c",
+					"collection": "b2751254-9cd0-4680-aba3-05f3c45810a8"
+				}
+			],
+			"headers": "Content-Type: application/x-www-form-urlencoded\ntoken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImZpcnN0X25hbWUiOiJQZWRybyIsImxhc3RfbmFtZSI6IkZlcm5hbmRleiIsImVtYWlsIjoicGVkcm9mQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiOTg3NjU0MzIxIiwiY3JlYXRlZCI6IjIwMTgtMDUtMTJUMDM6MDE6NTIuMDAwWiIsInRpcG9fdXNlcnMiOiJ1IiwiaWF0IjoxNTI2MDk0NDMzLCJleHAiOjE1MjYxODA4MzN9.DbvbvjbRH14j4H22wqin4WH-oVYPTGStRW70iy45VO0\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "aff32b84-f3f2-4813-a181-26da14e66965",
+			"name": "Votar por una idea",
+			"url": "http://200.107.241.6:1985/api/v1/user/actualizar/4",
+			"description": "Crear un nuevo usuario",
+			"data": [
+				{
+					"key": "first_name",
+					"value": "Irving",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "last_name",
+					"value": "Corenel",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "i.corenel@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "564123",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tipo_users",
+					"value": "u",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				},
+				{
+					"key": "token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImZpcnN0X25hbWUiOiJQZWRybyIsImxhc3RfbmFtZSI6IkZlcm5hbmRleiIsImVtYWlsIjoicGVkcm9mQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiOTg3NjU0MzIxIiwiY3JlYXRlZCI6IjIwMTgtMDUtMTJUMDM6MDE6NTIuMDAwWiIsInRpcG9fdXNlcnMiOiJ1IiwiaWF0IjoxNTI2MDk0NDMzLCJleHAiOjE1MjYxODA4MzN9.DbvbvjbRH14j4H22wqin4WH-oVYPTGStRW70iy45VO0",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "898be321-f1ec-445e-ae9e-91ae9241b638",
+			"responses": [
+				{
+					"id": "52681a5d-d9bc-4cea-8ff7-e12a3422a066",
+					"name": "Default",
+					"status": "201 Created",
+					"mime": null,
+					"language": null,
+					"text": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created"
+					},
+					"requestObject": {
+						"url": "http://200.107.241.6:1985/api/v1/user/nuevo",
+						"method": "POST",
+						"data": "",
+						"dataMode": "raw"
+					},
+					"headers": null,
+					"cookies": null,
+					"request": "aff32b84-f3f2-4813-a181-26da14e66965",
+					"collection": "b2751254-9cd0-4680-aba3-05f3c45810a8"
+				}
+			],
+			"headers": "Content-Type: application/x-www-form-urlencoded\ntoken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImZpcnN0X25hbWUiOiJQZWRybyIsImxhc3RfbmFtZSI6IkZlcm5hbmRleiIsImVtYWlsIjoicGVkcm9mQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiOTg3NjU0MzIxIiwiY3JlYXRlZCI6IjIwMTgtMDUtMTJUMDM6MDE6NTIuMDAwWiIsInRpcG9fdXNlcnMiOiJ1IiwiaWF0IjoxNTI2MDk0NDMzLCJleHAiOjE1MjYxODA4MzN9.DbvbvjbRH14j4H22wqin4WH-oVYPTGStRW70iy45VO0\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c6cdf1cf-f198-4369-8fbe-81ff806fc31e",
+			"name": "Nueva idea",
+			"url": "http://200.107.241.6:1985/api/v1/idea/nuevo",
+			"description": "Crear un nuevo usuario",
+			"data": [
+				{
+					"key": "title_idea",
+					"value": "Pedro",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "content_idea",
+					"value": "Fernandez",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				},
+				{
+					"key": "token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImZpcnN0X25hbWUiOiJQZWRybyIsImxhc3RfbmFtZSI6IkZlcm5hbmRleiIsImVtYWlsIjoicGVkcm9mQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiOTg3NjU0MzIxIiwiY3JlYXRlZCI6IjIwMTgtMDUtMTJUMDM6MDE6NTIuMDAwWiIsInRpcG9fdXNlcnMiOiJ1IiwiaWF0IjoxNTI2MDk0NDMzLCJleHAiOjE1MjYxODA4MzN9.DbvbvjbRH14j4H22wqin4WH-oVYPTGStRW70iy45VO0",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "898be321-f1ec-445e-ae9e-91ae9241b638",
+			"responses": [
+				{
+					"id": "3a22ad58-ca8f-4ab4-b5e8-b36a21c46fc7",
+					"name": "Default",
+					"status": "201 Created",
+					"mime": null,
+					"language": null,
+					"text": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created"
+					},
+					"requestObject": {
+						"url": "http://200.107.241.6:1985/api/v1/user/nuevo",
+						"method": "POST",
+						"data": "",
+						"dataMode": "raw"
+					},
+					"headers": null,
+					"cookies": null,
+					"request": "c6cdf1cf-f198-4369-8fbe-81ff806fc31e",
+					"collection": "b2751254-9cd0-4680-aba3-05f3c45810a8"
+				}
+			],
+			"headers": "Content-Type: application/x-www-form-urlencoded\ntoken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImZpcnN0X25hbWUiOiJQZWRybyIsImxhc3RfbmFtZSI6IkZlcm5hbmRleiIsImVtYWlsIjoicGVkcm9mQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiOTg3NjU0MzIxIiwiY3JlYXRlZCI6IjIwMTgtMDUtMTJUMDM6MDE6NTIuMDAwWiIsInRpcG9fdXNlcnMiOiJ1IiwiaWF0IjoxNTI2MDk0NDMzLCJleHAiOjE1MjYxODA4MzN9.DbvbvjbRH14j4H22wqin4WH-oVYPTGStRW70iy45VO0\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "d4241e36-6705-4576-8ee4-0a0c6d2a2a94",
+			"name": "Nuevo usuario",
+			"url": "http://200.107.241.6:1985/api/v1/user/nuevo",
+			"description": "Crear un nuevo usuario",
+			"data": [
+				{
+					"key": "first_name",
+					"value": "Pedro",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "last_name",
+					"value": "Fernandez",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "pedrof@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "987654321",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "636f9913-95ae-4c18-94fe-205bb232abde",
+			"responses": [
+				{
+					"id": "4289137b-3752-4ece-9f42-7534db658ce5",
+					"name": "Default",
+					"status": "201 Created",
+					"mime": null,
+					"language": null,
+					"text": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created"
+					},
+					"requestObject": {
+						"url": "http://200.107.241.6:1985/api/v1/user/nuevo",
+						"method": "POST",
+						"data": "",
+						"dataMode": "raw"
+					},
+					"headers": null,
+					"cookies": null,
+					"request": "d4241e36-6705-4576-8ee4-0a0c6d2a2a94",
+					"collection": "b2751254-9cd0-4680-aba3-05f3c45810a8"
+				}
+			],
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "e3342e70-fe64-4db7-ab25-a676d377fb33",
+			"name": "Eliminar un usuario",
+			"url": "http://200.107.241.6:1985/api/v1/user/eliminar/14",
+			"description": "Crear un nuevo usuario",
+			"data": [],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				},
+				{
+					"key": "token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImZpcnN0X25hbWUiOiJQZWRybyIsImxhc3RfbmFtZSI6IkZlcm5hbmRleiIsImVtYWlsIjoicGVkcm9mQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiOTg3NjU0MzIxIiwiY3JlYXRlZCI6IjIwMTgtMDUtMTJUMDM6MDE6NTIuMDAwWiIsInRpcG9fdXNlcnMiOiJ1IiwiaWF0IjoxNTI2MDk0NDMzLCJleHAiOjE1MjYxODA4MzN9.DbvbvjbRH14j4H22wqin4WH-oVYPTGStRW70iy45VO0",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "636f9913-95ae-4c18-94fe-205bb232abde",
+			"responses": [
+				{
+					"id": "18c38e1b-a279-4ae2-aee1-6556fd41b827",
+					"name": "Default",
+					"status": "201 Created",
+					"mime": null,
+					"language": null,
+					"text": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created"
+					},
+					"requestObject": {
+						"url": "http://200.107.241.6:1985/api/v1/user/nuevo",
+						"method": "POST",
+						"data": "",
+						"dataMode": "raw"
+					},
+					"headers": null,
+					"cookies": null,
+					"request": "e3342e70-fe64-4db7-ab25-a676d377fb33",
+					"collection": "b2751254-9cd0-4680-aba3-05f3c45810a8"
+				}
+			],
+			"headers": "Content-Type: application/x-www-form-urlencoded\ntoken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImZpcnN0X25hbWUiOiJQZWRybyIsImxhc3RfbmFtZSI6IkZlcm5hbmRleiIsImVtYWlsIjoicGVkcm9mQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiOTg3NjU0MzIxIiwiY3JlYXRlZCI6IjIwMTgtMDUtMTJUMDM6MDE6NTIuMDAwWiIsInRpcG9fdXNlcnMiOiJ1IiwiaWF0IjoxNTI2MDk0NDMzLCJleHAiOjE1MjYxODA4MzN9.DbvbvjbRH14j4H22wqin4WH-oVYPTGStRW70iy45VO0\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f95da31c-6353-4269-9ee6-1303ad2332b9",
+			"name": "Eliminar una Idea",
+			"url": "http://200.107.241.6:1985/api/v1/idea/eliminar/33",
+			"description": "Crear un nuevo usuario",
+			"data": [],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				},
+				{
+					"key": "token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImZpcnN0X25hbWUiOiJQZWRybyIsImxhc3RfbmFtZSI6IkZlcm5hbmRleiIsImVtYWlsIjoicGVkcm9mQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiOTg3NjU0MzIxIiwiY3JlYXRlZCI6IjIwMTgtMDUtMTJUMDM6MDE6NTIuMDAwWiIsInRpcG9fdXNlcnMiOiJ1IiwiaWF0IjoxNTI2MDk0NDMzLCJleHAiOjE1MjYxODA4MzN9.DbvbvjbRH14j4H22wqin4WH-oVYPTGStRW70iy45VO0",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "898be321-f1ec-445e-ae9e-91ae9241b638",
+			"responses": [
+				{
+					"id": "ceef0fb1-a186-4c13-b5a8-971971da0e8e",
+					"name": "Default",
+					"status": "201 Created",
+					"mime": null,
+					"language": null,
+					"text": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created"
+					},
+					"requestObject": {
+						"url": "http://200.107.241.6:1985/api/v1/user/nuevo",
+						"method": "POST",
+						"data": "",
+						"dataMode": "raw"
+					},
+					"headers": null,
+					"cookies": null,
+					"request": "f95da31c-6353-4269-9ee6-1303ad2332b9",
+					"collection": "b2751254-9cd0-4680-aba3-05f3c45810a8"
+				}
+			],
+			"headers": "Content-Type: application/x-www-form-urlencoded\ntoken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImZpcnN0X25hbWUiOiJQZWRybyIsImxhc3RfbmFtZSI6IkZlcm5hbmRleiIsImVtYWlsIjoicGVkcm9mQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiOTg3NjU0MzIxIiwiY3JlYXRlZCI6IjIwMTgtMDUtMTJUMDM6MDE6NTIuMDAwWiIsInRpcG9fdXNlcnMiOiJ1IiwiaWF0IjoxNTI2MDk0NDMzLCJleHAiOjE1MjYxODA4MzN9.DbvbvjbRH14j4H22wqin4WH-oVYPTGStRW70iy45VO0\n",
+			"pathVariables": {}
+		}
+	]
+}
