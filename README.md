@@ -13,6 +13,6 @@
 ###  IRVING ZENON CORONEL CABRERA
 
 # ESQUEMA DEL PROYECTO
-<p align="center"><img src="200.107.241.6/idea.jpg"></p>
+<p align="center"><img src="http://200.107.241.6/idea.jpg"></p>
 
 # Nota: CLIENTE API POSTMANT INCLUIDO EN EL REPOSITORIO
