@@ -1,0 +1,83 @@
+http:
+  port: 8080
+admin:
+  port: 2589
+  hostname: localhost    
+apiEndpoints:
+  userAPI:
+    host: '*'
+    paths:
+      - '/api/v1/sec/login'
+      - '/api/v1/user/nuevo'
+      - '/api/v1/user/todos'
+      - '/api/v1/user/eliminar/*'
+      - '/api/v1/user/actualizar/*'
+  ideaAPI:
+    host: '*'
+    paths:
+      - '/api/v1/idea/nuevo'
+      - '/api/v1/idea/todos'
+      - '/api/v1/idea/eliminar/*'
+      - '/api/v1/idea/voto/*'
+serviceEndpoints:
+  userService:
+    url: 'http://192.168.1.9:3000'
+  ideaService:
+    url: 'http://192.168.1.9:3100'
+policies:
+  - expression
+  - proxy
+pipelines:
+  - name: user
+    apiEndpoints:
+      - userAPI
+    policies:
+      - expression:
+        - action:
+            jscode: |
+              if (req.url.startsWith('/api/v1/sec/login')) {
+                req.url = '/users/login';
+              }
+              if (req.url.startsWith('/api/v1/user/nuevo')) {
+                req.url = '/users/new';
+              }
+              if (req.url.startsWith('/api/v1/user/todos')) {
+                req.url = '/users/getUsers';
+              }
+              if (req.url.startsWith('/api/v1/user/eliminar')) {
+                const slug = req.url.substr('/api/v1/user/eliminar'.length);
+                req.url = '/users/delete' + slug;
+              }
+              if (req.url.startsWith('/api/v1/user/actualizar')) {
+                const slug = req.url.substr('/api/v1/user/actualizar'.length);
+                req.url = '/users/update' + slug;;
+              }
+      - proxy:
+        - action:
+            serviceEndpoint: userService
+            changeOrigin: true
+  - name: idea
+    apiEndpoints:
+      - ideaAPI
+    policies:
+      - expression:
+        - action:
+            jscode: |
+              if (req.url.startsWith('/api/v1/idea/nuevo')) {
+                req.url = '/ideas/newIdea';
+              }
+              if (req.url.startsWith('/api/v1/idea/todos')) {
+                req.url = '/ideas/getIdeas';
+              }
+              if (req.url.startsWith('/api/v1/idea/eliminar')) {
+                const slug = req.url.substr('/api/v1/user/eliminar'.length);
+                req.url = '/ideas/deleteIdea' + slug;
+              }
+              if (req.url.startsWith('/api/v1/idea/voto')) {
+                const slug = req.url.substr('/api/v1/idea/voto'.length);
+                req.url = '/ideas/insertVotos' + slug;
+              }
+      - proxy:
+        - action:
+            serviceEndpoint: ideaService
+            changeOrigin: true
